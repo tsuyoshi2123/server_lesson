@@ -1,0 +1,284 @@
+    1  exit
+    2  sudo yum -y groupinstall "development tools"
+    3  sudo yum -y install epel-release wget
+    4  sudo wget http://rpms.famillecollet.com/enterprise/remi-release-7.rpm
+    5  sudo rpm -Uvh remi-release-7.rpm
+    6  sudo yum -y install --enablerepo=remi-php72 php php-pdo php-mysqlnd php-mbstring php-xml php-fpm php-common php-devel php-mysql unzip
+    7  php -v
+    8  php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+    9  php composer-setup.php
+   10  php -r "unlink('composer-setup.php');"
+   11  sudo mv composer.phar /usr/local/bin/composer
+   12  composer -v
+   13  ls
+   14  ls/
+   15   ls /
+   16  ls /usr
+   17  -a
+   18  ls
+   19  -l
+   20  ls /-a
+   21  ls -l
+   22  ls -a
+   23  pwd
+   24  cd /vagrant
+   25  pwd
+   26  /
+   27  cd /
+   28  cd ..
+   29  cd /vagrant
+   30  cd ..
+   31  cd /vagrant
+   32  cd -
+   33  cd /vagrant
+   34  cd ~
+   35  cd /vagrant
+   36  cd usr
+   37  cd
+   38  cd /usr
+   39  pwd
+   40  ls
+   41  cd 
+   42  ls
+   43  ls /
+   44  ls
+   45  cd /vagrat
+   46  cd
+   47  cd /vagrant
+   48  mkdir server_lesson && cd server_lesson
+   49  git init
+   50  touch first.txt
+   51  cd /vagrant
+   52  mkdir server_lesson/linux_practice/public
+   53  cd /vagrant
+   54  mkdir -p server_lesson/linux_practice/public
+   55  ls server_lesson server_lesson/linux_practice
+   56  cd /server_lesson
+   57  cd
+   58  cd /server_lesson
+   59  cd /vagrant
+   60  cd /server_lesson
+   61  ls
+   62  ls /-a
+   63  ls -a
+   64  ls -l
+   65  cd /server_lesson
+   66  cd /linux_practice
+   67  cd linux_practice
+   68  ls server_lesson server_lesson/linux_practice
+   69  ls server_lesson 
+   70  ls server_lesson/linux_practice
+   71  cd /vagrant
+   72  touch server_lesson/linux_practice/public/index.php
+   73  ls server_lesson/linux_practice/public
+   74  cd /vagrant/server_lesson && ls
+   75  cd /vagrant/server_lesson/linux_practice/public
+   76  cp index.php index_bk.php
+   77  ls
+   78  git status
+   79  git add .
+   80  git status
+   81  git commit -m 'first commit'
+   82  git status
+   83  ls
+   84  cd
+   85  git status
+   86  cd /vagrant/server_lesson/linux_practice
+   87  cd /public
+   88  cd public
+   89  pwd
+   90  cd /vagrant/server_lesson/linux_practice
+   91  cp -r public tmp
+   92  ls ./ public tmp
+   93  cd /vagrant
+   94  mv server_lesson/linux_practice server_lesson/linux_practice1
+   95  mkdir linux_practice2 linux_practice3
+   96  mv ./linux_practice2 ./server_lesson
+   97  cd /vagrant/server_lesson/linux_practice1/tmp/
+   98  rm *_bk.php
+   99  cd /vagrant
+  100  rm server_lesson/first.txt
+  101  rm -r linux_practice3
+  102  ls server_lesson
+  103  cd /vagrant/server_lesson
+  104  echo '# サーバレッスン' > README.md
+  105  echo 'Linuxプラクティス' >> README.md
+  106  echo '-----------------' >> README.md
+  107  cat README.md
+  108  cd /vagrant/server_lesson
+  109  vi README.md
+  110  git status
+  111  git add .
+  112  git status
+  113  git commit -m 'task_1 linax'
+  114  ls
+  115  pwd
+  116  ls server_lesson server_lesson
+  117  ls server_lesson
+  118  ls
+  119  cd linux_practice1
+  120  ls
+  121  ls public
+  122  ls tmp
+  123  cd
+  124  cd server_lesson
+  125  cd /server_lesson
+  126  cd /vagrant
+  127  cd server_lesson
+  128  cd ./
+  129  cd ../
+  130  ls server_lesson/linux_practic/public
+  131  ls
+  132  cd server_lesson
+  133  cd linux_practice2
+  134  cd
+  135  git status
+  136  git log
+  137  git branch
+  138  cd server_lesson
+  139  cd vagrant 
+  140  cd vagrant
+  141  cd /vagrant
+  142  git status
+  143  git log
+  144  git branch
+  145  git status
+  146  cd /server_lesson
+  147  cd server_lesson
+  148  git status
+  149  git add .
+  150  git status
+  151  git log
+  152  git remote add origin https://github.com/tsuyoshi2123/server_lesson.git
+  153  git remote -v
+  154  git push origin master
+  155  git status
+  156  cd linux_practice
+  157  ls
+  158  git status
+  159  git add .
+  160  git status
+  161  git log
+  162  git branch
+  163  ls
+  164  ls -a
+  165  ls -la
+  166  pwd;find . | sort | sed '1d;s/^\.//;s/\/\([^/]*\)$/|--\1/;s/\/[^/|]*/|  /g'
+  167  cd linux_practice2
+  168  mkdir documents
+  169  cd documents
+  170  cd ../
+  171  pwd;find . | sort | sed '1d;s/^\.//;s/\/\([^/]*\)$/|--\1/;s/\/[^/|]*/|  /g'
+  172  mkdir trash && .gitignore
+  173  mkdir trash && mkdir .gitignore
+  174  pwd;find . | sort | sed '1d;s/^\.//;s/\/\([^/]*\)$/|--\1/;s/\/[^/|]*/|  /g'
+  175  mkdir .gitignore
+  176  pwd;find . | sort | sed '1d;s/^\.//;s/\/\([^/]*\)$/|--\1/;s/\/[^/|]*/|  /g'
+  177  mkdir exec_command.log
+  178  pwd;find . | sort | sed '1d;s/^\.//;s/\/\([^/]*\)$/|--\1/;s/\/[^/|]*/|  /g'
+  179  cd documents
+  180  touch gizumo{01..50}.md
+  181  pwd;find . | sort | sed '1d;s/^\.//;s/\/\([^/]*\)$/|--\1/;s/\/[^/|]*/|  /g'
+  182  touch gizumo51.sample
+  183  pwd;find . | sort | sed '1d;s/^\.//;s/\/\([^/]*\)$/|--\1/;s/\/[^/|]*/|  /g'
+  184  touch gizumo52.sample
+  185  touch gizumo53.sample
+  186  touch gizumo{54..60.sample
+  187  pwd;find . | sort | sed '1d;s/^\.//;s/\/\([^/]*\)$/|--\1/;s/\/[^/|]*/|  /g'
+  188  rm gizumo{54..60.sample
+  189  pwd;find . | sort | sed '1d;s/^\.//;s/\/\([^/]*\)$/|--\1/;s/\/[^/|]*/|  /g'
+  190  rm gizumo{54..60}.sample
+  191  touch gizumo{54..60}.sample
+  192  pwd;find . | sort | sed '1d;s/^\.//;s/\/\([^/]*\)$/|--\1/;s/\/[^/|]*/|  /g'
+  193  cd ../
+  194  cd documents
+  195  cd ./
+  196  cd ../
+  197  cd../
+  198  cd ../
+  199  pwd;find . | sort | sed '1d;s/^\.//;s/\/\([^/]*\)$/|--\1/;s/\/[^/|]*/|  /g'
+  200  cd server_lesson
+  201  cd linux_practice
+  202  cd linux_practice2
+  203  mv ./documents/gizumo{51..54}.sample ./trash
+  204  pwd;find . | sort | sed '1d;s/^\.//;s/\/\([^/]*\)$/|--\1/;s/\/[^/|]*/|  /g'
+  205  mv ./documents/gizumo{20..40}.md ./trash
+  206  pwd;find . | sort | sed '1d;s/^\.//;s/\/\([^/]*\)$/|--\1/;s/\/[^/|]*/|  /g'
+  207  vi trash
+  208  vi README.md
+  209  pwd;find . | sort | sed '1d;s/^\.//;s/\/\([^/]*\)$/|--\1/;s/\/[^/|]*/|  /g'
+  210  vi README.mds
+  211  cd
+  212  cd vagrant
+  213  cd /vagrant
+  214  pwd;find . | sort | sed '1d;s/^\.//;s/\/\([^/]*\)$/|--\1/;s/\/[^/|]*/|  /g'
+  215  cd server_lesson
+  216  vi README.md
+  217  vi .gitignore
+  218  cd linux_practice2
+  219  vi .gitignore
+  220  pwd;find . | sort | sed '1d;s/^\.//;s/\/\([^/]*\)$/|--\1/;s/\/[^/|]*/|  /g'
+  221  vi .gitignore
+  222  git status
+  223  git log
+  224  rm .gitignore
+  225  ls
+  226  rm .gitignore
+  227  vi .gitignore
+  228  git status
+  229  pwd;find . | sort | sed '1d;s/^\.//;s/\/\([^/]*\)$/|--\1/;s/\/[^/|]*/|  /g'
+  230  git status --ignored
+  231  git log
+  232  vi .gitignore
+  233  cd .gitignore
+  234  vi .gitignore
+  235  pwd;find . | sort | sed '1d;s/^\.//;s/\/\([^/]*\)$/|--\1/;s/\/[^/|]*/|  /g'
+  236  cd
+  237  cd -
+  238  cd ..
+  239  pwd;find . | sort | sed '1d;s/^\.//;s/\/\([^/]*\)$/|--\1/;s/\/[^/|]*/|  /g'
+  240  vi .gitignore
+  241  cd .gitignore
+  242  vi .gitignore
+  243  cd ..
+  244  cd -
+  245  rm .gitignore
+  246  cd .gitignore
+  247  cd ..
+  248  rm .gitignore
+  249  ps aux
+  250  touch .gitignore
+  251  cd .gitignore
+  252  cd ..
+  253  vi .gitignore
+  254  git rm --cached -r .gitignore
+  255  pwd;find . | sort | sed '1d;s/^\.//;s/\/\([^/]*\)$/|--\1/;s/\/[^/|]*/|  /g'
+  256  rm 1
+  257  pwd;find . | sort | sed '1d;s/^\.//;s/\/\([^/]*\)$/|--\1/;s/\/[^/|]*/|  /g'
+  258  rmdir .gitignore
+  259  pwd;find . | sort | sed '1d;s/^\.//;s/\/\([^/]*\)$/|--\1/;s/\/[^/|]*/|  /g'
+  260  touch .gitignore
+  261  pwd;find . | sort | sed '1d;s/^\.//;s/\/\([^/]*\)$/|--\1/;s/\/[^/|]*/|  /g'
+  262  vi .gitignore
+  263  gitstatus
+  264  git status
+  265  cd ,,
+  266  cd ..
+  267  git status
+  268  cd exce_command.log
+  269  cd linux_practice
+  270  cd linux_practice2
+  271  cd exec_command.log
+  272  cd ..
+  273  rmdir exec_command.log
+  274  cd exec_command.log
+  275  ls
+  276  pwd;find . | sort | sed '1d;s/^\.//;s/\/\([^/]*\)$/|--\1/;s/\/[^/|]*/|  /g'
+  277  touch exec_command.log
+  278  pwd;find . | sort | sed '1d;s/^\.//;s/\/\([^/]*\)$/|--\1/;s/\/[^/|]*/|  /g'
+  279  history 300
+  280  echo history 300 > exec_command.log
+  281  vi exec_command.log
+  282  cat exec_command.log
+  283  vi exec_command.log
+  284  history 300 > exec_command.log
